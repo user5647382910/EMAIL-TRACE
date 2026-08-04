@@ -1,10 +1,4 @@
 ### INSTALACAO
 | NIVEL | SIGNIFICADO |
 |-------|-------------|
-| `[+] CONFIRMADO` | APARECEU E-MAIL/TELEFONE MASCARADO DE RECUPERACAO → PROVA FORTE |
-| `[+] REGISTRADO` | ALTA CONFIANCA DE QUE A CONTA EXISTE |
-| `[?] PROVAVEL` | SUSPEITO DE RATE-LIMIT → PODE SER FALSO-POSITIVO |
-| `[-] INDETERMINADO` | git clone git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
-cd EMAIL-TRACE://github.com/SEU_USUARIO/EMAIL-TRACE.git
-cd EMAIL-TRACE |
-| `[-] NAO ENCONTRADO` | pkg update && pkg upgrade -y |
+| pkg update && pkg upgrade -y |

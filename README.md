@@ -60,6 +60,7 @@ pip install -r requirements.txt
 sudo apt update && sudo apt upgrade -y
 ---
 sudo apt install python3 python3-pip git -y
+---
 git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
 ---
 cd EMAIL-TRACE

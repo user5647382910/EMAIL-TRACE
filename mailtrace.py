@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
   EMAIL TRACE v2 — varredura OSINT de e-mail com níveis de confiança
-  Motor: holehe | Termux e Linux
+  Motor: holehe | Termux
   Uso:  python3 mailtrace.py alvo@email.com [--only-used] [--strict]
         python3 mailtrace.py alvo@email.com --no-password-recovery
 """
@@ -221,13 +221,12 @@ def main():
     if not args.no_banner:
         print(f"{C}{B}{banner('EMAIL TRACE')}{D}")
         print(f"{GR}{'═' * 64}{D}")
-        print(f"{GR}  OSINT · motor: holehe · {len(alvos)} alvo(s) · stealth{D}")
+        print(f"{GR}  OSINT · motor: holehe · {len(alvos)} alvo(s) · stealth · Termux{D}")
         print(f"{GR}{'═' * 64}{D}\n")
 
     if ENGINE is None:
         print(f"{R}[-]{D} Motor 'holehe' não encontrado. Instale com:")
         print(f"{Y}   Termux:{D}  pkg install python && pip install holehe")
-        print(f"{Y}   Linux:{D}   pip3 install holehe")
         sys.exit(1)
 
     for i, email in enumerate(alvos, 1):

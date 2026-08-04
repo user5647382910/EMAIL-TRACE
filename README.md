@@ -134,10 +134,12 @@ pip uninstall holehe -y
 
 ## 📊 EXEMPLO DE SAIDA
 
-|--------------------|
-| `[+] CONFIRMADO  instagram.com (instagram) [rec: ex****e@gmail.com] |
-| [+] REGISTRADO  spotify.com (spotify)` |
-|   `[?] PROVAVEL    google.com (google) [rate-limit frequente — pode ser falso-positivo]` |
-| `[?] PROVAVEL    google.com (google) [rate-limit frequente — pode ser falso-positivo]` |
-| `[-] INDETERMINADO ebay.com (ebay) (bloqueado pelo site)` |
-| `[-] NAO` |
+---
+[+] CONFIRMADO  instagram.com (instagram) [rec: ex****e@gmail.com]
+  [+] REGISTRADO  spotify.com (spotify)
+  [?] PROVAVEL    google.com (google) [rate-limit frequente — pode ser falso-positivo]
+  [-] INDETERMINADO ebay.com (ebay) (bloqueado pelo site)
+  [-] NAO ENCONTRADO discord.com (discord)
+
+  ═ Total: 120 | Contas: 2 | Suspeitas: 1 | Indeterminadas: 1 | Nao encontradas: 116
+  ---

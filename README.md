@@ -3,7 +3,7 @@
 **FERRAMENTA OSINT QUE DESCOBRE EM QUAIS SITES UM E-MAIL TEM CONTA REGISTRADA.**
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
-![Plataforma](https://img.shields.io/badge/Plataforma-Termux%20%7C%20Linux-green)
+![Plataforma](https://img.shields.io/badge/Plataforma-Termux-green)
 ![Motor](https://img.shields.io/badge/Motor-holehe-important)
 
 ---
@@ -37,107 +37,42 @@ A FERRAMENTA USA O FLUXO PUBLICO DE "ESQUECI MINHA SENHA" E DE CADASTRO DE CADA 
 - ✅ RELATORIO SALVO EM ARQUIVO (--save)
 - ✅ SUPORTE A LISTA DE MULTIPLOS E-MAILS (-l)
 - ✅ BANNER GRANDE + SPINNER DE PROGRESSO
-- ✅ FUNCIONA NO TERMUX E LINUX
+- ✅ FUNCIONA DIRETO NO CELULAR (TERMUX)
 
-## 🛠️ INSTALACÃO
-## 📱 TERMUX (ANDROID)
 ---
+
+## 🛠️ INSTALACAO (TERMUX)
+
+### PASSO 1 — ATUALIZAR O TERMUX
+
+```bash
+## Passo 1 - Atualizar
+
+```bash
 pkg update && pkg upgrade -y
---
+```
+
+## Passo 2 - Instalar dependências
+
+```bash
 pkg install python git -y
----
-git clone https://github.com/user5647382910/EMAIL-TRACE.git
----
-cd EMAIL-TRACE
----
-pip install --upgrade pip
----
-pip install -r requirements.txt
----
+```
 
-## 🛠 INSTALACÃO
-## 💻 LINUX (KALI / DEBIAN / UBUNTU)
----
-sudo apt update && sudo apt upgrade -y
----
-sudo apt install python3 python3-pip git -y
----
+## Passo 3 - Clonar
+
+```bash
 git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
----
 cd EMAIL-TRACE
----
-pip3 install --upgrade pip
----
-pip3 install -r requirements.txt
----
+```
 
-## 🚀 COMO USAR
----
-# VARREDURA COMPLETA (MOSTRA TUDO)
-python3 mailtrace.py alvo@email.com
----
-# SO MOSTRA ONDE TEM CONTA
-python3 mailtrace.py alvo@email.com --only-used
----
-# MODO ESTRITO (RECOMENDADO) — ESCONDE SUSPEITOS DE FALSO-POSITIVO
-python3 mailtrace.py alvo@email.com --strict
----
-# SALVA O RELATORIO EM ARQUIVO
-python3 mailtrace.py alvo@email.com --strict --save relatorio.txt
----
-# VARIOS E-MAILS DE UMA LISTA (UM POR LINHA)
-python3 mailtrace.py -l emails.txt --save relatorio.txt
----
-# AUMENTA O TIMEOUT POR SITE (REDE LENTA)
-python3 mailtrace.py alvo@email.com --timeout 20
----
-# PARA RODAR DIRETO COM ./mailtrace.py (SEM "python3")
-chmod +x mailtrace.py
-./mailtrace.py alvo@email.com --strict
----
+## Passo 4 - Instalar requisitos
 
-## 🔄 COMO ATUALIZAR NO TERMUX
----
-cd EMAIL-TRACE
----
-git pull origin main
----
+```bash
 pip install -r requirements.txt
----
+```
 
-## 🔄 COMO ATUALIZAR NO LINUX
----
-cd EMAIL-TRACE
----
-git pull origin main
----
-pip3 install -r requirements.txt
----
+## Passo 5 - Executar
 
-## 🗑 COMO DESINSTALAR NO TERMUX
----
-cd ~
----
-rm -rf EMAIL-TRACE
----
-pip uninstall holehe -y
----
-
-## 🗑 COMO DESINSTALAR NO LINUX 
----
-cd ~
----
-rm -rf EMAIL-TRACE
----
-pip3 uninstall holehe -y
----
-
-## 🧠 MOTOR
-ESTE PROJETO E UM WRAPPER SOBRE O HOLEHE (GPL-3.0). CREDITOS DA ENGINE: MEGADOSE.
----
-
-## ⚠️ AVISO LEGAL
-USE APENAS EM E-MAILS QUE VOCE TEM AUTORIZACAO PARA INVESTIGAR (CONTA PROPRIA, PENTEST AUTORIZADO, INVESTIGACAO OSINT LEGAL). O USO INDEVIDO E DE RESPONSABILIDADE EXCLUSIVA DO USUARIO.
----
-## MEU DISCORD user7391054826
-## MEU TIKTOK user2714950386
+```bash
+python main.py
+```

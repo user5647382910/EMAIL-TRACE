@@ -41,12 +41,9 @@ A FERRAMENTA USA O FLUXO PUBLICO DE "ESQUECI MINHA SENHA" E DE CADASTRO DE CADA 
 - ✅ SUPORTE A LISTA DE MULTIPLOS E-MAILS (-l)
 - ✅ BANNER GRANDE + SPINNER DE PROGRESSO
 - ✅ FUNCIONA NO TERMUX E LINUX
-
----
-## 🛠️ INSTALACAO
+- ## INSTALACAO
 
 ### 📱 TERMUX (ANDROID)
-
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git -y
@@ -54,44 +51,3 @@ git clone https://github.com/user5647382910/EMAIL-TRACE.git
 cd EMAIL-TRACE
 pip install --upgrade pip
 pip install -r requirements.txt
----
-
-## 🛠️ INSTALACAO
-
-### 💻 LINUX (KALI / DEBIAN / UBUNTU)
-
-```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install python3 python3-pip git -y
-git clone https://github.com/user5647382910/EMAIL-TRACE.git
-cd EMAIL-TRACE
-pip3 install --upgrade pip
-pip3 install -r requirements.txt
-
-🚀 COMO USAR
-
-```bash
-# VARREDURA COMPLETA (MOSTRA TUDO)
-python3 mailtrace.py alvo@email.com
-
-# SO MOSTRA ONDE TEM CONTA
-python3 mailtrace.py alvo@email.com --only-used
-
-# MODO ESTRITO (RECOMENDADO) — ESCONDE SUSPEITOS DE FALSO-POSITIVO
-python3 mailtrace.py alvo@email.com --strict
-
-# SALVA O RELATORIO EM ARQUIVO
-python3 mailtrace.py alvo@email.com --strict --save relatorio.txt
-
-# VARIOS E-MAILS DE UMA LISTA (UM POR LINHA)
-python3 mailtrace.py -l emails.txt --save relatorio.txt
-
-# AUMENTA O TIMEOUT POR SITE (REDE LENTA)
-python3 mailtrace.py alvo@email.com --timeout 20
-
-# PARA RODAR DIRETO COM ./mailtrace.py (SEM "python3")
-chmod +x mailtrace.py
-./mailtrace.py alvo@email.com --strict
-
-
-

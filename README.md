@@ -60,6 +60,9 @@ pkg install python git -y
 
 ```bash
 git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
+```
+
+```bash
 cd EMAIL-TRACE
 ```
 

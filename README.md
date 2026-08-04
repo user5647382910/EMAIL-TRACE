@@ -52,12 +52,14 @@ git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
 cd EMAIL-TRACE
 pip install --upgrade pip
 pip install -r requirements.txt
+
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip git -y
 git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
 cd EMAIL-TRACE
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
+
 # VARREDURA COMPLETA (MOSTRA TUDO)
 python3 mailtrace.py alvo@email.com
 
@@ -79,4 +81,6 @@ python3 mailtrace.py alvo@email.com --timeout 20
 # PARA RODAR DIRETO COM ./mailtrace.py (SEM "python3")
 chmod +x mailtrace.py
 ./mailtrace.py alvo@email.com --strict
+
+
 

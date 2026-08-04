@@ -46,11 +46,16 @@ A FERRAMENTA USA O FLUXO PUBLICO DE "ESQUECI MINHA SENHA" E DE CADASTRO DE CADA 
 ### 📱 TERMUX (ANDROID) 
 
 pkg update && pkg upgrade -y
+--
 pkg install python git -y
+---
 git clone https://github.com/user5647382910/EMAIL-TRACE.git
 cd EMAIL-TRACE
+---
 pip install --upgrade pip
+---
 pip install -r requirements.txt
+---
 
 ## 🛠 INSTALACÃO
 

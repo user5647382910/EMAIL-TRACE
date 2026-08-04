@@ -46,34 +46,22 @@ A FERRAMENTA USA O FLUXO PUBLICO DE "ESQUECI MINHA SENHA" E DE CADASTRO DE CADA 
 ### PASSO 1 — ATUALIZAR O TERMUX
 
 ```bash
-
 pkg update && pkg upgrade -y
 ```
-
-## Passo 2 - Instalar dependências
+## PASSO 2 — INSTALAR PYTHON E GIT
 
 ```bash
 pkg install python git -y
 ```
-
-## Passo 3 - Clonar
-
-```bash
-git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
-```
+## PASSO 3 — BAIXAR A FERRAMENTA
 
 ```bash
+git clone https://github.com/user5647382910/EMAIL-TRACE.git
 cd EMAIL-TRACE
 ```
-
-## Passo 4 - Instalar requisitos
+## PASSO 4 — INSTALAR AS DEPENDENCIAS
 
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-## Passo 5 - Executar
-
-```bash
-python main.py
 ```

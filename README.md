@@ -11,3 +11,8 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```bas
 oi
+```bash
+uo
+```bash
+ei
+```bash

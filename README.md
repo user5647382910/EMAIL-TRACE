@@ -40,8 +40,8 @@ A FERRAMENTA USA O FLUXO PUBLICO DE "ESQUECI MINHA SENHA" E DE CADASTRO DE CADA 
 - ✅ FUNCIONA NO TERMUX E LINUX
 
 ## 🛠️ INSTALACÃO
-## 📱 TERMUX (ANDROID) 
-
+## 📱 TERMUX (ANDROID)
+---
 pkg update && pkg upgrade -y
 --
 pkg install python git -y

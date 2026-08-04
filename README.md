@@ -132,14 +132,18 @@ rm -rf EMAIL-TRACE
 pip uninstall holehe -y
 ```
 
-## 📊 EXEMPLO DE SAIDA
+## 🧠 MOTOR
+
+ESTE PROJETO E UM WRAPPER SOBRE O HOLEHE (GPL-3.0). CREDITOS DA ENGINE: MEGADOSE.
+
+## ⚠️ AVISO LEGAL
+
+USE APENAS EM E-MAILS QUE VOCE TEM AUTORIZACAO PARA INVESTIGAR (CONTA PROPRIA, PENTEST AUTORIZADO, INVESTIGACAO OSINT LEGAL). O USO INDEVIDO E DE RESPONSABILIDADE EXCLUSIVA DO USUARIO.
 
 ---
-[+] CONFIRMADO  instagram.com (instagram) [rec: ex****e@gmail.com]
-  [+] REGISTRADO  spotify.com (spotify)
-  [?] PROVAVEL    google.com (google) [rate-limit frequente — pode ser falso-positivo]
-  [-] INDETERMINADO ebay.com (ebay) (bloqueado pelo site)
-  [-] NAO ENCONTRADO discord.com (discord)
-
-  ═ Total: 120 | Contas: 2 | Suspeitas: 1 | Indeterminadas: 1 | Nao encontradas: 116
-  ---
+MEU TIKTOK 
+user2714950386
+---
+MEU DISCORD 
+user7391054826
+---

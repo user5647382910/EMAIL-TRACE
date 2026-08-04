@@ -58,7 +58,16 @@ except Exception:
 EMAIL_RE = re.compile(r"^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$")
 
 
-def =timeout)
+def scan_com_holehe(email, timeout, no_password_recovery=False):
+    """Motor oficial holehe — varredura paralela com trio + httpx."""
+    import trio
+    import httpx
+
+    async def _run():
+        modules = import_submodules("holehe.modules")
+        args = argparse.Namespace(nopasswordrecovery=no_password_recovery)
+        websites = get_functions(modules, args)
+        client = httpx.AsyncClient(timeout=timeout)
         out = []
         async with trio.open_nursery() as nursery:
             for site in websites:

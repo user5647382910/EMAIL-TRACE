@@ -101,7 +101,7 @@ python3 mailtrace.py alvo@email.com --strict --only-used --save relatorio.txt
 | `-l ARQUIVO` | LISTA DE E-MAILS (UM POR LINHA) |
 | `--only-used` | MOSTRA APENAS CONTAS ENCONTRADAS |
 | `--strict` | OCULTA RESULTADOS PROVAVEL (MENOS FALSOS POSITIVOS) |
-| `--no-password-recovery`  PULA SITES DE RECUPERACAO DE SENHA |
+| `--no-password-recovery` | PULA SITES DE RECUPERACAO DE SENHA |
 | `--timeout N` | TIMEOUT POR REQUISICAO EM SEGUNDOS (PADRAO: 10) |
 | `--save ARQUIVO` | SALVA O RELATORIO EM ARQUIVO |
 | `--no-banner` | NAO EXIBE O BANNER |

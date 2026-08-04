@@ -46,9 +46,7 @@ A FERRAMENTA USA O FLUXO PUBLICO DE "ESQUECI MINHA SENHA" E DE CADASTRO DE CADA 
 ### PASSO 1 — ATUALIZAR O TERMUX
 
 ```bash
-## Passo 1 - Atualizar
 
-```bash
 pkg update && pkg upgrade -y
 ```
 

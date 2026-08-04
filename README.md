@@ -65,3 +65,81 @@ cd EMAIL-TRACE
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+## 🚀 COMO USAR
+
+```bash
+# VARREDURA COMPLETA (MOSTRA TUDO)
+python3 mailtrace.py alvo@email.com
+
+# SO MOSTRA ONDE TEM CONTA
+python3 mailtrace.py alvo@email.com --only-used
+
+# MODO ESTRITO (RECOMENDADO) — ESCONDE SUSPEITOS DE FALSO-POSITIVO
+python3 mailtrace.py alvo@email.com --strict
+
+# SALVA O RELATORIO EM ARQUIVO
+python3 mailtrace.py alvo@email.com --strict --save relatorio.txt
+
+# VARIOS E-MAILS DE UMA LISTA (UM POR LINHA)
+python3 mailtrace.py -l emails.txt --save relatorio.txt
+
+# AUMENTA O TIMEOUT POR SITE (REDE LENTA)
+python3 mailtrace.py alvo@email.com --timeout 20
+
+# PARA RODAR DIRETO COM ./mailtrace.py (SEM "python3")
+chmod +x mailtrace.py
+./mailtrace.py alvo@email.com --strict
+
+# COMANDO RECOMENDADO (TUDO EM UM)
+python3 mailtrace.py alvo@email.com --strict --only-used --save relatorio.txt
+```
+## TABELA DE OPCOES
+
+| FLAG | DESCRICAO |
+|-------|-------------|
+| `alvo@email.com` | E-MAIL A SER VERIFICADO |
+| `-l ARQUIVO` | LISTA DE E-MAILS (UM POR LINHA) |
+| `--only-used` | MOSTRA APENAS CONTAS ENCONTRADAS |
+| `--strict` | OCULTA RESULTADOS PROVAVEL (MENOS FALSOS POSITIVOS) |
+| `--no-password-recovery`  PULA SITES DE RECUPERACAO DE SENHA |
+| `--timeout N` | TIMEOUT POR REQUISICAO EM SEGUNDOS (PADRAO: 10) |
+| `--save ARQUIVO` | SALVA O RELATORIO EM ARQUIVO |
+| `--no-banner` | NAO EXIBE O BANNER |
+
+## FORMATO DO ARQUIVO emails.txt
+
+---
+alvo1@gmail.com
+---
+alvo2@hotmail.com
+---
+alvo3@yahoo.com
+---
+
+## 🔄 COMO ATUALIZAR
+
+```bash 
+cd EMAIL-TRACE
+git pull origin main
+pip install -r requirements.txt
+```
+
+## 🗑 COMO DESINSTALAR
+
+```bash 
+cd ~
+rm -rf EMAIL-TRACE
+pip uninstall holehe -y
+```
+
+## 📊 EXEMPLO DE SAIDA
+
+---
+[+] CONFIRMADO  instagram.com (instagram) [rec: ex****e@gmail.com]
+  [+] REGISTRADO  spotify.com (spotify)
+  [?] PROVAVEL    google.com (google) [rate-limit frequente — pode ser falso-positivo]
+  [-] INDETERMINADO ebay.com (ebay) (bloqueado pelo site)
+  [-] NAO ENCONTRADO discord.com (discord)
+
+  ═ Total: 120 | Contas: 2 | Suspeitas: 1 | Indeterminadas: 1 | Nao encontradas: 116
+  ---

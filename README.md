@@ -55,7 +55,87 @@ pip install -r requirements.txt
 ---
 
 ## 🛠 INSTALACÃO
-
 ## 💻 LINUX (KALI / DEBIAN / UBUNTU)
-
 ---
+sudo apt update && sudo apt upgrade -y
+---
+sudo apt install python3 python3-pip git -y
+git clone https://github.com/SEU_USUARIO/EMAIL-TRACE.git
+---
+cd EMAIL-TRACE
+---
+pip3 install --upgrade pip
+---
+pip3 install -r requirements.txt
+---
+
+## 🚀 COMO USAR
+---
+# VARREDURA COMPLETA (MOSTRA TUDO)
+python3 mailtrace.py alvo@email.com
+---
+# SO MOSTRA ONDE TEM CONTA
+python3 mailtrace.py alvo@email.com --only-used
+---
+# MODO ESTRITO (RECOMENDADO) — ESCONDE SUSPEITOS DE FALSO-POSITIVO
+python3 mailtrace.py alvo@email.com --strict
+---
+# SALVA O RELATORIO EM ARQUIVO
+python3 mailtrace.py alvo@email.com --strict --save relatorio.txt
+---
+# VARIOS E-MAILS DE UMA LISTA (UM POR LINHA)
+python3 mailtrace.py -l emails.txt --save relatorio.txt
+---
+# AUMENTA O TIMEOUT POR SITE (REDE LENTA)
+python3 mailtrace.py alvo@email.com --timeout 20
+---
+# PARA RODAR DIRETO COM ./mailtrace.py (SEM "python3")
+chmod +x mailtrace.py
+./mailtrace.py alvo@email.com --strict
+---
+
+## 🔄 COMO ATUALIZAR NO TERMUX
+---
+cd EMAIL-TRACE
+---
+git pull origin main
+---
+pip install -r requirements.txt
+---
+
+## 🔄 COMO ATUALIZAR NO LINUX
+---
+cd EMAIL-TRACE
+---
+git pull origin main
+---
+pip3 install -r requirements.txt
+---
+
+## 🗑 COMO DESINSTALAR NO TERMUX
+---
+cd ~
+---
+rm -rf EMAIL-TRACE
+---
+pip uninstall holehe -y
+---
+
+## 🗑 COMO DESINSTALAR NO LINUX 
+---
+cd ~
+---
+rm -rf EMAIL-TRACE
+---
+pip3 uninstall holehe -y
+---
+
+## 🧠 MOTOR
+ESTE PROJETO E UM WRAPPER SOBRE O HOLEHE (GPL-3.0). CREDITOS DA ENGINE: MEGADOSE.
+---
+
+## ⚠️ AVISO LEGAL
+USE APENAS EM E-MAILS QUE VOCE TEM AUTORIZACAO PARA INVESTIGAR (CONTA PROPRIA, PENTEST AUTORIZADO, INVESTIGACAO OSINT LEGAL). O USO INDEVIDO E DE RESPONSABILIDADE EXCLUSIVA DO USUARIO.
+---
+## MEU DISCORD user7391054826
+## MEU TIKTOK user2714950386

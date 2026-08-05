@@ -62,8 +62,7 @@ cd EMAIL-TRACE
 ## PASSO 4 — INSTALAR AS DEPENDENCIAS
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install holehe
 ```
 ## 🚀 COMO USAR
 
